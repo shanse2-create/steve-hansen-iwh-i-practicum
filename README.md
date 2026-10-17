@@ -10,7 +10,7 @@ ___
 ## Tips:
 - Commit to your repository often. Even if you make small tweaks to your code, it’s best to be committing to your repository frequently.
 - The subject of the custom object is up to you. Feel free to get creative!
-- Use a developer test account and keep your private app access token in your local .env file.
+- (my change) Use a developer test account and keep your private app access token in your local .env file.
 - Ensure you re-merge any working branches into the main branch.
 - DO NOT ADD YOUR PRIVATE APP TOKEN TO YOUR REPOSITORY. 
 

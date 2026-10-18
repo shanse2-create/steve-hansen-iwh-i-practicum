@@ -56,3 +56,118 @@ input[type="submit"] {
     padding: .375rem 1rem;
     margin-top: 10px;
 }
+/* Workshops homepage */
+.workshops-page {
+    max-width: 960px;
+    margin: 3rem auto;
+    padding: 0 1.5rem;
+    color: #213343;
+    line-height: 1.5;
+}
+
+.workshops-header {
+    margin-bottom: 2rem;
+}
+
+.workshops-header h1 {
+    margin: 0 0 0.5rem;
+}
+
+.workshops-header p,
+.workshops-count {
+    color: #526577;
+}
+
+.workshops-table-wrapper {
+    overflow-x: auto;
+    border: 1px solid #dbe2e8;
+    border-radius: 8px;
+}
+
+.workshops-table {
+    width: 100%;
+    min-width: 540px;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.workshops-table th,
+.workshops-table td {
+    padding: 1rem 1.25rem;
+    border-bottom: 1px solid #dbe2e8;
+}
+
+.workshops-table th {
+    background-color: #f3f6f8;
+}
+
+.workshops-table tbody tr:last-child td {
+    border-bottom: 0;
+}
+
+.workshops-count {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+.workshops-notice {
+    padding: 1.25rem;
+    background-color: #f3f6f8;
+    border-radius: 8px;
+}
+
+.workshops-notice a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: #006b60;
+}
+
+/* Workshop form */
+.workshops-link {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #006b60;
+}
+
+.workshops-form {
+    display: grid;
+    gap: 1.25rem;
+    max-width: 560px;
+}
+
+.workshops-field label {
+    margin: 0 0 0.375rem;
+    font-weight: 600;
+}
+
+.workshops-field input[type="text"] {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    padding: 0.75rem;
+    border: 1px solid #a7b6c2;
+    border-radius: 4px;
+    color: inherit;
+    font: inherit;
+}
+
+.workshops-submit {
+    padding: 0.75rem 1.25rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #006b60;
+    color: #fff;
+    font: inherit;
+    cursor: pointer;
+}
+
+.workshops-submit:hover {
+    background-color: #00564d;
+}
+
+.workshops-field input:focus-visible,
+.workshops-submit:focus-visible,
+.workshops-link:focus-visible {
+    outline: 2px solid #006b60;
+    outline-offset: 3px;
+}

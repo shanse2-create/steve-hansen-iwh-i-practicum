@@ -1,0 +1,28 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="utf-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1")
+        title= title
+        link(rel="stylesheet", href="/css/style.css")
+    body
+        main.workshops-page
+            header.workshops-header
+                h1 Add a workshop
+                p Enter the workshop name, topic, and location.
+            form.workshops-form(action="/update-cobj", method="POST")
+                if error
+                    .workshops-notice(role="alert")
+                        p= error
+                .workshops-field
+                    label(for="name") Name
+                    input#name(type="text", name="name", value=values.name, required)
+                .workshops-field
+                    label(for="topic") Topic
+                    input#topic(type="text", name="topic", value=values.topic, required)
+                .workshops-field
+                    label(for="location") Location
+                    input#location(type="text", name="location", value=values.location, required)
+                div
+                    button.workshops-submit(type="submit") Add workshop
+            a.workshops-link(href="/") Return to homepage

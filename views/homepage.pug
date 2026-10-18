@@ -1,0 +1,34 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="utf-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1")
+        title= title
+        link(rel="stylesheet", href="/css/style.css")
+    body
+        main.workshops-page
+            header.workshops-header
+                h1 Workshops
+                p Explore workshops on lead qualification, integrations, and automation.
+                a.workshops-link(href="/update-cobj") Add to this table
+            if error
+                .workshops-notice(role="alert")
+                    p= error
+                    a(href="/") Try again
+            else if workshops.length
+                .workshops-table-wrapper
+                    table.workshops-table(aria-label="Workshops")
+                        thead
+                            tr
+                                th(scope="col") Name
+                                th(scope="col") Topic
+                                th(scope="col") Location
+                        tbody
+                            each workshop in workshops
+                                tr
+                                    td= workshop.properties.name || 'Untitled workshop'
+                                    td= workshop.properties.topic || 'Not specified'
+                                    td= workshop.properties.location || 'Not specified'
+                p.workshops-count= workshops.length + (workshops.length === 1 ? ' workshop' : ' workshops')
+            else
+                p.workshops-notice No workshops have been added yet.
